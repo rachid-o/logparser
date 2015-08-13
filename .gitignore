@@ -6,4 +6,6 @@
 /bin
 /build
 /out
-*.iml
+/*.iml
+/*.ipr
+/*.iws
