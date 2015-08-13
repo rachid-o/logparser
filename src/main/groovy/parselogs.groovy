@@ -1,20 +1,24 @@
-//println "hello world from groovy version ${GroovySystem.version}"
+/**
+ * Script to retrieve durations from logfiles and outputs it to CSV
+ */
 
-println "Parse file: ${args}"
-//println "Parse file: ${args[0]}"
+def filename = args.length > 0 ? args[0]: "test.log"
+println "Parsing: $filename"
 
-def filename = 'test.log'
 File logfile = new File(filename)  // inFile is a string file name
-
 if(!logfile.exists()) {
     println "${filename} does not exist"
     return;
 }
 
-println "parsing ${filename}"
-
-
+def KEY_FINISHED = "FINISHED"
 logfile.eachLine{line ->
-   println line
+    if(line.contains("FINISHED")) {
+        finishedLine = line.substring(line.lastIndexOf(KEY_FINISHED) + KEY_FINISHED.length()).trim()
+        tokens = finishedLine.split('\\s')
+        methodName = tokens[0]
+        duration = tokens[1]
+        println "\"$methodName\";$duration"
+    }
 }
 

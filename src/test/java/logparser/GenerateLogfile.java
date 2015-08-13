@@ -14,13 +14,13 @@ public class GenerateLogfile {
     public static void main(String[] args) throws Exception {
         log("Generating log file");
         GenerateLogfile gl = new GenerateLogfile();
-        gl.run();
-        gl.run();
+        gl.cycle();
+        gl.cycle();
         log("Finished generating log file");
     }
 
 
-    private void run() throws InterruptedException {
+    private void cycle() throws InterruptedException {
         List<Thread> threads = new ArrayList<>();
         threads.add(new Thread(() -> {
             // Thread generate some noize in the log, until the others are finished
@@ -35,7 +35,7 @@ public class GenerateLogfile {
             cdl.countDown();
         }));
         threads.add(new Thread(() -> {
-            runMethod("slow", 45);
+            runMethod("slow", 46);
             cdl.countDown();
         }));
         threads.add(new Thread(() -> {
@@ -44,16 +44,19 @@ public class GenerateLogfile {
             cdl.countDown();
         }));
         threads.add(new Thread(() -> {
-            runMethod("fast", 10);
-            runMethod("fast", 10);
-            runMethod("fast", 10);
+            runMethod("fast", 30);
+            runMethod("fast", 30);
+            sleep(500);
+            runMethod("fast", 30);
+            runMethod("fast", 30);
             cdl.countDown();
         }));
 
         cdl = new CountDownLatch(threads.size());
         threads.forEach(t -> t.start());
         // Wait until all threads are finished
-        cdl.await(10, TimeUnit.MINUTES);
+        cdl.await(5, TimeUnit.MINUTES);
+        log("cycle finished");
     }
 
 
@@ -62,7 +65,7 @@ public class GenerateLogfile {
         long start = System.currentTimeMillis();
         fib(complexity);
         long duration = System.currentTimeMillis() - start;
-        log("FINISHED " + methodName + " in " + duration + " ms");
+        log("FINISHED " + methodName + " " + duration + " ms");
     }
 
 
