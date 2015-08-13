@@ -43,16 +43,27 @@ logFile.eachLine{line ->
 println "Created CSV: ${csvFilename}"
 
 
-Chart chart = new ChartBuilder().chartType(StyleManager.ChartType.Line)
+
+def chartBuilder = new ChartBuilder().chartType(StyleManager.ChartType.Line)
         .width(800).height(600).title(filename)
-        .xAxisTitle("cycle").yAxisTitle("milliseconds").build();
+        .xAxisTitle("cycle").yAxisTitle("milliseconds")
+
+Chart chartCombined = chartBuilder.build();
 
 methodDurations.each{ method, durations ->
     yData = (1..durations.size())    // List of index numbers of each element in durations
-    chart.addSeries(method, yData, durations);
+    chartCombined.addSeries(method, yData, durations);
+
+    Chart singleChart = chartBuilder.build();
+    singleChart.addSeries(method, yData, durations);
+    saveChart(singleChart, filename + "-" + method);
 }
 
+saveChart(chartCombined, filename);
 
-//new SwingWrapper(chart).displayChart();   // Show the chart
-BitmapEncoder.saveBitmap(chart, filename, BitmapEncoder.BitmapFormat.PNG);
-println "Created graph: ${filename}.png"
+
+def saveChart(chart, name) {
+    //new SwingWrapper(chart).displayChart();   // Show the chart
+    BitmapEncoder.saveBitmap(chart, name, BitmapEncoder.BitmapFormat.PNG);
+    println "Created graph: ${name}.png"
+}
