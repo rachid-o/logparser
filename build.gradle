@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+}
+
+// task to execute the Groovy script
+task parselogs (dependsOn: 'classes', type: JavaExec) {
+    main = 'parselogs'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task createWrapper(type: Wrapper) {
+  gradleVersion = '2.6'
+}
