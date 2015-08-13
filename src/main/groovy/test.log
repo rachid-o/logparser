@@ -1,0 +1,44 @@
+2015-13-08 20:19:25:305 - Generating log file
+2015-13-08 20:19:25:314 - useless logline, coundown: 4
+2015-13-08 20:19:25:314 - STARTED medium with a complexity of: 42
+2015-13-08 20:19:25:314 - STARTED slow with a complexity of: 45
+2015-13-08 20:19:25:315 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:25:315 - FINISHED fast in 0 ms
+2015-13-08 20:19:25:315 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:25:315 - FINISHED fast in 0 ms
+2015-13-08 20:19:25:315 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:25:315 - FINISHED fast in 0 ms
+2015-13-08 20:19:25:819 - useless logline, coundown: 3
+2015-13-08 20:19:26:321 - useless logline, coundown: 3
+2015-13-08 20:19:26:340 - FINISHED medium in 1026 ms
+2015-13-08 20:19:26:340 - STARTED medium with a complexity of: 42
+2015-13-08 20:19:26:823 - useless logline, coundown: 3
+2015-13-08 20:19:27:293 - FINISHED medium in 953 ms
+2015-13-08 20:19:27:327 - useless logline, coundown: 2
+2015-13-08 20:19:27:831 - useless logline, coundown: 2
+2015-13-08 20:19:28:336 - useless logline, coundown: 2
+2015-13-08 20:19:28:841 - useless logline, coundown: 2
+2015-13-08 20:19:29:344 - useless logline, coundown: 2
+2015-13-08 20:19:29:611 - FINISHED slow in 4296 ms
+2015-13-08 20:19:29:846 - useless logline, coundown: 4
+2015-13-08 20:19:29:846 - STARTED slow with a complexity of: 45
+2015-13-08 20:19:29:846 - STARTED medium with a complexity of: 42
+2015-13-08 20:19:29:846 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:29:846 - FINISHED fast in 0 ms
+2015-13-08 20:19:29:847 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:29:847 - FINISHED fast in 0 ms
+2015-13-08 20:19:29:847 - STARTED fast with a complexity of: 10
+2015-13-08 20:19:29:847 - FINISHED fast in 0 ms
+2015-13-08 20:19:30:350 - useless logline, coundown: 3
+2015-13-08 20:19:30:816 - FINISHED medium in 969 ms
+2015-13-08 20:19:30:816 - STARTED medium with a complexity of: 42
+2015-13-08 20:19:30:853 - useless logline, coundown: 3
+2015-13-08 20:19:31:354 - useless logline, coundown: 3
+2015-13-08 20:19:31:779 - FINISHED medium in 962 ms
+2015-13-08 20:19:31:859 - useless logline, coundown: 2
+2015-13-08 20:19:32:364 - useless logline, coundown: 2
+2015-13-08 20:19:32:869 - useless logline, coundown: 2
+2015-13-08 20:19:33:372 - useless logline, coundown: 2
+2015-13-08 20:19:33:875 - useless logline, coundown: 2
+2015-13-08 20:19:33:969 - FINISHED slow in 4123 ms
+2015-13-08 20:19:34:379 - Finished generating log file
