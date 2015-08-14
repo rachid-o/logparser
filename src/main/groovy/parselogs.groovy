@@ -6,6 +6,7 @@ import com.xeiam.xchart.SwingWrapper
 
 /**
  * Script to retrieve durations from logfiles and outputs it to CSV
+ * Also generates charts in png. 
  */
 
 
@@ -13,7 +14,7 @@ import com.xeiam.xchart.SwingWrapper
 def filename = args.length > 0 ? args[0]: "example.log"
 println "Parsing: $filename"
 
-File logFile = new File(filename)  // inFile is a string file name
+File logFile = new File(filename)
 if(!logFile.exists()) {
     println "${filename} does not exist"
     return;
@@ -24,7 +25,7 @@ def KEY_FINISHED = "FINISHED"
 def NEWLINE = System.getProperty("line.separator")
 def csvFilename = filename + ".csv"
 def cvsFile = new File(csvFilename)
-cvsFile.delete()
+cvsFile.delete()    // Remove this line to add to the existing file
 
 logFile.eachLine{line ->
     if(line.contains("FINISHED")) {
@@ -43,6 +44,9 @@ logFile.eachLine{line ->
 println "Created CSV: ${csvFilename}"
 
 
+/**
+ *  Generate charts
+ */
 
 def chartBuilder = new ChartBuilder().chartType(StyleManager.ChartType.Line)
         .width(800).height(600).title(filename)
