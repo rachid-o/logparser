@@ -1,62 +1,200 @@
+INFO   | jvm 1    | 2015/08/14 12:20:39 | Duration of executing thread PollingOrSync in MilliSeconds : 46
+INFO   | jvm 1    | 2015/08/14 12:21:09 | Duration of exectuing proxyview of PointsToPoll : 266
+INFO   | jvm 1    | 2015/08/14 12:21:09 | Duration of executing method getPointsToPoll in MilliSeconds : 266
+INFO   | jvm 1    | 2015/08/14 12:21:09 | Duration of executing method doPolling in MilliSeconds : 422
+INFO   | jvm 1    | 2015/08/14 12:21:09 | Duration of executing thread PollingOrSync in MilliSeconds : 422
+INFO   | jvm 1    | 2015/08/14 12:21:09 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:21:12 | Duration of updating measurementpoints in MilliSeconds : 2310
+INFO   | jvm 1    | 2015/08/14 12:21:39 | Duration of exectuing proxyview of PointsToPoll : 47
+INFO   | jvm 1    | 2015/08/14 12:21:39 | Duration of executing method getPointsToPoll in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 12:21:39 | Duration of executing method doPolling in MilliSeconds : 109
+INFO   | jvm 1    | 2015/08/14 12:21:39 | Duration of executing thread PollingOrSync in MilliSeconds : 109
+INFO   | jvm 1    | 2015/08/14 12:21:39 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:21:40 | Duration of updating measurementpoints in MilliSeconds : 638
+INFO   | jvm 1    | 2015/08/14 12:22:09 | Duration of exectuing proxyview of PointsToPoll : 62
+INFO   | jvm 1    | 2015/08/14 12:22:09 | Duration of executing method getPointsToPoll in MilliSeconds : 62
+INFO   | jvm 1    | 2015/08/14 12:22:09 | Duration of executing method doPolling in MilliSeconds : 125
+INFO   | jvm 1    | 2015/08/14 12:22:09 | Duration of executing thread PollingOrSync in MilliSeconds : 125
+INFO   | jvm 1    | 2015/08/14 12:22:09 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:22:11 | Duration of updating measurementpoints in MilliSeconds : 1622
+INFO   | jvm 1    | 2015/08/14 12:22:39 | Duration of exectuing proxyview of PointsToPoll : 46
+INFO   | jvm 1    | 2015/08/14 12:22:39 | Duration of executing method getPointsToPoll in MilliSeconds : 46
+INFO   | jvm 1    | 2015/08/14 12:22:39 | Duration of executing method doPolling in MilliSeconds : 78
+INFO   | jvm 1    | 2015/08/14 12:22:39 | Duration of executing thread PollingOrSync in MilliSeconds : 78
+INFO   | jvm 1    | 2015/08/14 12:22:39 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:22:40 | Duration of updating measurementpoints in MilliSeconds : 669
+INFO   | jvm 1    | 2015/08/14 12:23:09 | Duration of exectuing proxyview of PointsToPoll : 47
+INFO   | jvm 1    | 2015/08/14 12:23:09 | Duration of executing method getPointsToPoll in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 12:23:09 | Duration of executing method doPolling in MilliSeconds : 79
+INFO   | jvm 1    | 2015/08/14 12:23:09 | Duration of executing thread PollingOrSync in MilliSeconds : 79
+INFO   | jvm 1    | 2015/08/14 12:23:09 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:23:11 | Duration of updating measurementpoints in MilliSeconds : 1669
 
-2015-13-08 21:30:15:520 - Generating log file
-2015-13-08 21:30:15:529 - useless logline, coundown: 4
-2015-13-08 21:30:15:530 - STARTED medium with a complexity of: 42
-2015-13-08 21:30:15:530 - STARTED slow with a complexity of: 46
-2015-13-08 21:30:15:530 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:15:536 - FINISHED fast 6 ms
-2015-13-08 21:30:15:536 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:15:539 - FINISHED fast 3 ms
-2015-13-08 21:30:16:035 - useless logline, coundown: 4
-2015-13-08 21:30:16:043 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:16:047 - FINISHED fast 4 ms
-2015-13-08 21:30:16:047 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:16:050 - FINISHED fast 3 ms
-2015-13-08 21:30:16:540 - useless logline, coundown: 3
-2015-13-08 21:30:16:598 - FINISHED medium 1068 ms
-2015-13-08 21:30:16:598 - STARTED medium with a complexity of: 42
-2015-13-08 21:30:17:042 - useless logline, coundown: 3
-2015-13-08 21:30:17:538 - FINISHED medium 940 ms
-2015-13-08 21:30:17:547 - useless logline, coundown: 2
-2015-13-08 21:30:18:048 - useless logline, coundown: 2
-2015-13-08 21:30:18:553 - useless logline, coundown: 2
-2015-13-08 21:30:19:055 - useless logline, coundown: 2
-2015-13-08 21:30:19:560 - useless logline, coundown: 2
-2015-13-08 21:30:20:062 - useless logline, coundown: 2
-2015-13-08 21:30:20:565 - useless logline, coundown: 2
-2015-13-08 21:30:21:068 - useless logline, coundown: 2
-2015-13-08 21:30:21:573 - useless logline, coundown: 2
-2015-13-08 21:30:22:078 - useless logline, coundown: 2
-2015-13-08 21:30:22:173 - FINISHED slow 6643 ms
-2015-13-08 21:30:22:583 - cycle finished
-2015-13-08 21:30:22:584 - useless logline, coundown: 4
-2015-13-08 21:30:22:584 - STARTED medium with a complexity of: 42
-2015-13-08 21:30:22:584 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:22:584 - STARTED slow with a complexity of: 46
-2015-13-08 21:30:22:588 - FINISHED fast 4 ms
-2015-13-08 21:30:22:588 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:22:592 - FINISHED fast 4 ms
-2015-13-08 21:30:23:088 - useless logline, coundown: 4
-2015-13-08 21:30:23:098 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:23:101 - FINISHED fast 2 ms
-2015-13-08 21:30:23:101 - STARTED fast with a complexity of: 30
-2015-13-08 21:30:23:104 - FINISHED fast 3 ms
-2015-13-08 21:30:23:520 - FINISHED medium 935 ms
-2015-13-08 21:30:23:520 - STARTED medium with a complexity of: 42
-2015-13-08 21:30:23:591 - useless logline, coundown: 3
-2015-13-08 21:30:24:092 - useless logline, coundown: 3
-2015-13-08 21:30:24:455 - FINISHED medium 935 ms
-2015-13-08 21:30:24:593 - useless logline, coundown: 2
-2015-13-08 21:30:25:098 - useless logline, coundown: 2
-2015-13-08 21:30:25:603 - useless logline, coundown: 2
-2015-13-08 21:30:26:106 - useless logline, coundown: 2
-2015-13-08 21:30:26:611 - useless logline, coundown: 2
-2015-13-08 21:30:27:115 - useless logline, coundown: 2
-2015-13-08 21:30:27:620 - useless logline, coundown: 2
-2015-13-08 21:30:28:124 - useless logline, coundown: 2
-2015-13-08 21:30:28:627 - useless logline, coundown: 2
-2015-13-08 21:30:29:131 - useless logline, coundown: 2
-2015-13-08 21:30:29:146 - FINISHED slow 6562 ms
-2015-13-08 21:30:29:636 - cycle finished
-2015-13-08 21:30:29:637 - Finished generating log file
 
+INFO   | jvm 1    | 2015/08/14 12:28:26 | Duration of executing thread PollingOrSync in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 12:28:56 | Duration of exectuing proxyview of PointsToPoll : 219
+INFO   | jvm 1    | 2015/08/14 12:28:56 | Duration of executing method getPointsToPoll in MilliSeconds : 219
+INFO   | jvm 1    | 2015/08/14 12:28:57 | Duration of executing method doPolling in MilliSeconds : 375
+INFO   | jvm 1    | 2015/08/14 12:28:57 | Duration of executing thread PollingOrSync in MilliSeconds : 375
+INFO   | jvm 1    | 2015/08/14 12:28:57 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:29:00 | Duration of updating measurementpoints in MilliSeconds : 1901
+INFO   | jvm 1    | 2015/08/14 12:29:26 | Duration of exectuing proxyview of PointsToPoll : 109
+INFO   | jvm 1    | 2015/08/14 12:29:26 | Duration of executing method getPointsToPoll in MilliSeconds : 109
+INFO   | jvm 1    | 2015/08/14 12:29:26 | Duration of executing method doPolling in MilliSeconds : 156
+INFO   | jvm 1    | 2015/08/14 12:29:26 | Duration of executing thread PollingOrSync in MilliSeconds : 156
+INFO   | jvm 1    | 2015/08/14 12:29:26 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:29:29 | Duration of updating measurementpoints in MilliSeconds : 2119
+INFO   | jvm 1    | 2015/08/14 12:29:56 | Duration of exectuing proxyview of PointsToPoll : 63
+INFO   | jvm 1    | 2015/08/14 12:29:56 | Duration of executing method getPointsToPoll in MilliSeconds : 63
+INFO   | jvm 1    | 2015/08/14 12:29:56 | Duration of executing method doPolling in MilliSeconds : 94
+INFO   | jvm 1    | 2015/08/14 12:29:56 | Duration of executing thread PollingOrSync in MilliSeconds : 110
+INFO   | jvm 1    | 2015/08/14 12:29:56 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:29:58 | Duration of updating measurementpoints in MilliSeconds : 1181
+INFO   | jvm 1    | 2015/08/14 12:30:26 | Duration of exectuing proxyview of PointsToPoll : 62
+INFO   | jvm 1    | 2015/08/14 12:30:26 | Duration of executing method getPointsToPoll in MilliSeconds : 62
+INFO   | jvm 1    | 2015/08/14 12:30:26 | Duration of executing method doPolling in MilliSeconds : 94
+INFO   | jvm 1    | 2015/08/14 12:30:26 | Duration of executing thread PollingOrSync in MilliSeconds : 109
+INFO   | jvm 1    | 2015/08/14 12:30:26 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:30:29 | Duration of updating measurementpoints in MilliSeconds : 2180
+INFO   | jvm 1    | 2015/08/14 12:30:56 | Duration of exectuing proxyview of PointsToPoll : 62
+INFO   | jvm 1    | 2015/08/14 12:30:56 | Duration of executing method getPointsToPoll in MilliSeconds : 62
+INFO   | jvm 1    | 2015/08/14 12:30:56 | Duration of executing method doPolling in MilliSeconds : 93
+INFO   | jvm 1    | 2015/08/14 12:30:56 | Duration of executing thread PollingOrSync in MilliSeconds : 93
+INFO   | jvm 1    | 2015/08/14 12:30:56 | Updated MeasurementPoints count : 100
+INFO   | jvm 1    | 2015/08/14 12:30:58 | Duration of updating measurementpoints in MilliSeconds : 1180
+
+
+INFO   | jvm 1    | 2015/08/14 12:37:24 |  INFO [14-08-2015 12:37:24] Using RMI protocol for remote communication.
+INFO   | jvm 1    | 2015/08/14 12:37:24 |  INFO [14-08-2015 12:37:24] Initialization of polling and synchronizer successful.
+INFO   | jvm 1    | 2015/08/14 12:37:24 | Duration of executing thread PollingOrSync in MilliSeconds : 46
+INFO   | jvm 1    | 2015/08/14 12:39:25 | Duration of exectuing proxyview of PointsToPoll : 656
+INFO   | jvm 1    | 2015/08/14 12:39:25 | Duration of executing method getPointsToPoll in MilliSeconds : 703
+INFO   | jvm 1    | 2015/08/14 12:39:25 | Duration of executing method doPolling in MilliSeconds : 1125
+INFO   | jvm 1    | 2015/08/14 12:39:25 | Duration of executing thread PollingOrSync in MilliSeconds : 1125
+INFO   | jvm 1    | 2015/08/14 12:39:25 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 12:39:52 | Duration of updating measurementpoints in MilliSeconds : 26399
+INFO   | jvm 1    | 2015/08/14 12:41:24 | Duration of exectuing proxyview of PointsToPoll : 437
+INFO   | jvm 1    | 2015/08/14 12:41:24 | Duration of executing method getPointsToPoll in MilliSeconds : 437
+INFO   | jvm 1    | 2015/08/14 12:41:25 | Duration of executing method doPolling in MilliSeconds : 671
+INFO   | jvm 1    | 2015/08/14 12:41:25 | Duration of executing thread PollingOrSync in MilliSeconds : 671
+INFO   | jvm 1    | 2015/08/14 12:41:25 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 12:41:50 | Duration of updating measurementpoints in MilliSeconds : 24865
+INFO   | jvm 1    | 2015/08/14 12:43:24 | Duration of exectuing proxyview of PointsToPoll : 438
+INFO   | jvm 1    | 2015/08/14 12:43:24 | Duration of executing method getPointsToPoll in MilliSeconds : 453
+INFO   | jvm 1    | 2015/08/14 12:43:25 | Duration of executing method doPolling in MilliSeconds : 625
+INFO   | jvm 1    | 2015/08/14 12:43:25 | Duration of executing thread PollingOrSync in MilliSeconds : 625
+INFO   | jvm 1    | 2015/08/14 12:43:25 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 12:43:48 | Duration of updating measurementpoints in MilliSeconds : 22908
+INFO   | jvm 1    | 2015/08/14 12:45:24 | Duration of exectuing proxyview of PointsToPoll : 375
+INFO   | jvm 1    | 2015/08/14 12:45:24 | Duration of executing method getPointsToPoll in MilliSeconds : 391
+INFO   | jvm 1    | 2015/08/14 12:45:25 | Duration of executing method doPolling in MilliSeconds : 563
+INFO   | jvm 1    | 2015/08/14 12:45:25 | Duration of executing thread PollingOrSync in MilliSeconds : 563
+INFO   | jvm 1    | 2015/08/14 12:45:25 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 12:45:47 | Duration of updating measurementpoints in MilliSeconds : 21966
+INFO   | jvm 1    | 2015/08/14 12:47:24 | Duration of exectuing proxyview of PointsToPoll : 375
+INFO   | jvm 1    | 2015/08/14 12:47:24 | Duration of executing method getPointsToPoll in MilliSeconds : 391
+INFO   | jvm 1    | 2015/08/14 12:47:25 | Duration of executing method doPolling in MilliSeconds : 547
+INFO   | jvm 1    | 2015/08/14 12:47:25 | Duration of executing thread PollingOrSync in MilliSeconds : 547
+INFO   | jvm 1    | 2015/08/14 12:47:25 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 12:47:50 | Duration of updating measurementpoints in MilliSeconds : 24978
+
+
+INFO   | jvm 1    | 2015/08/14 14:18:35 | CATA 08/14/15 14:18:34 INFO [org.apache.coyote.AbstractProtocol start] Starting ProtocolHandler ["http-bio-18170"] 
+INFO   | jvm 1    | 2015/08/14 14:18:35 | CATA 08/14/15 14:18:34 INFO [org.apache.coyote.AbstractProtocol start] Starting ProtocolHandler ["ajp-bio-18119"] 
+INFO   | jvm 1    | 2015/08/14 14:18:35 | CATA 08/14/15 14:18:34 INFO [org.apache.catalina.startup.Catalina start] Server startup in 61010 ms 
+INFO   | jvm 1    | 2015/08/14 14:18:42 |  INFO [14-08-2015 14:18:42] Using RMI protocol for remote communication.
+INFO   | jvm 1    | 2015/08/14 14:18:43 |  INFO [14-08-2015 14:18:42] Initialization of polling and synchronizer successful.
+INFO   | jvm 1    | 2015/08/14 14:18:43 | Duration of executing thread PollingOrSync in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 14:20:43 | Duration of exectuing proxyview of PointsToPoll : 750
+INFO   | jvm 1    | 2015/08/14 14:20:43 | Duration of executing method getPointsToPoll in MilliSeconds : 781
+INFO   | jvm 1    | 2015/08/14 14:20:44 | Duration of executing method doPolling in MilliSeconds : 1219
+INFO   | jvm 1    | 2015/08/14 14:20:44 | Duration of executing thread PollingOrSync in MilliSeconds : 1219
+INFO   | jvm 1    | 2015/08/14 14:20:44 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 14:21:10 | Duration of updating measurementpoints in MilliSeconds : 25873
+INFO   | jvm 1    | 2015/08/14 14:22:43 | Duration of exectuing proxyview of PointsToPoll : 531
+INFO   | jvm 1    | 2015/08/14 14:22:43 | Duration of executing method getPointsToPoll in MilliSeconds : 547
+INFO   | jvm 1    | 2015/08/14 14:22:43 | Duration of executing method doPolling in MilliSeconds : 781
+INFO   | jvm 1    | 2015/08/14 14:22:43 | Duration of executing thread PollingOrSync in MilliSeconds : 781
+INFO   | jvm 1    | 2015/08/14 14:22:43 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 14:23:08 | Duration of updating measurementpoints in MilliSeconds : 24295
+INFO   | jvm 1    | 2015/08/14 14:24:43 | Duration of exectuing proxyview of PointsToPoll : 547
+INFO   | jvm 1    | 2015/08/14 14:24:43 | Duration of executing method getPointsToPoll in MilliSeconds : 563
+INFO   | jvm 1    | 2015/08/14 14:24:43 | Duration of executing method doPolling in MilliSeconds : 735
+INFO   | jvm 1    | 2015/08/14 14:24:43 | Duration of executing thread PollingOrSync in MilliSeconds : 735
+INFO   | jvm 1    | 2015/08/14 14:24:43 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 14:25:06 | Duration of updating measurementpoints in MilliSeconds : 22342
+INFO   | jvm 1    | 2015/08/14 14:26:43 | Duration of exectuing proxyview of PointsToPoll : 485
+INFO   | jvm 1    | 2015/08/14 14:26:43 | Duration of executing method getPointsToPoll in MilliSeconds : 485
+INFO   | jvm 1    | 2015/08/14 14:26:43 | Duration of executing method doPolling in MilliSeconds : 672
+INFO   | jvm 1    | 2015/08/14 14:26:43 | Duration of executing thread PollingOrSync in MilliSeconds : 672
+INFO   | jvm 1    | 2015/08/14 14:26:43 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 14:27:09 | Duration of updating measurementpoints in MilliSeconds : 25404
+INFO   | jvm 1    | 2015/08/14 14:28:43 | Duration of exectuing proxyview of PointsToPoll : 469
+INFO   | jvm 1    | 2015/08/14 14:28:43 | Duration of executing method getPointsToPoll in MilliSeconds : 484
+INFO   | jvm 1    | 2015/08/14 14:28:43 | Duration of executing method doPolling in MilliSeconds : 656
+INFO   | jvm 1    | 2015/08/14 14:28:43 | Duration of executing thread PollingOrSync in MilliSeconds : 656
+INFO   | jvm 1    | 2015/08/14 14:28:43 | Updated MeasurementPoints count : 1000
+INFO   | jvm 1    | 2015/08/14 14:29:06 | Duration of updating measurementpoints in MilliSeconds : 22417
+
+
+INFO   | jvm 1    | 2015/08/14 14:56:06 |  INFO [14-08-2015 14:56:06] Using RMI protocol for remote communication.
+INFO   | jvm 1    | 2015/08/14 14:56:07 |  INFO [14-08-2015 14:56:07] Initialization of polling and synchronizer successful.
+INFO   | jvm 1    | 2015/08/14 14:56:07 | Duration of executing thread PollingOrSync in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 14:59:10 | Duration of exectuing proxyview of PointsToPoll : 2594
+INFO   | jvm 1    | 2015/08/14 14:59:10 | Duration of executing method getPointsToPoll in MilliSeconds : 2703
+INFO   | jvm 1    | 2015/08/14 14:59:12 | Duration of executing method doPolling in MilliSeconds : 5187
+INFO   | jvm 1    | 2015/08/14 14:59:12 | Duration of executing thread PollingOrSync in MilliSeconds : 5187
+INFO   | jvm 1    | 2015/08/14 14:59:12 | Updated MeasurementPoints count : 6000
+INFO   | jvm 1    | 2015/08/14 15:02:09 | Duration of exectuing proxyview of PointsToPoll : 2422
+INFO   | jvm 1    | 2015/08/14 15:02:09 | Duration of executing method getPointsToPoll in MilliSeconds : 2469
+INFO   | jvm 1    | 2015/08/14 15:02:11 | Duration of executing method doPolling in MilliSeconds : 3828
+INFO   | jvm 1    | 2015/08/14 15:02:11 | Duration of executing thread PollingOrSync in MilliSeconds : 3828
+INFO   | jvm 1    | 2015/08/14 15:02:22 | Duration of updating measurementpoints in MilliSeconds : 189432
+INFO   | jvm 1    | 2015/08/14 15:02:22 | Updated MeasurementPoints count : 5999
+INFO   | jvm 1    | 2015/08/14 15:05:09 | Duration of exectuing proxyview of PointsToPoll : 2422
+INFO   | jvm 1    | 2015/08/14 15:05:09 | Duration of executing method getPointsToPoll in MilliSeconds : 2469
+INFO   | jvm 1    | 2015/08/14 15:05:11 | Duration of executing method doPolling in MilliSeconds : 3672
+INFO   | jvm 1    | 2015/08/14 15:05:11 | Duration of executing thread PollingOrSync in MilliSeconds : 3672
+INFO   | jvm 1    | 2015/08/14 15:05:30 | Duration of updating measurementpoints in MilliSeconds : 187538
+INFO   | jvm 1    | 2015/08/14 15:05:30 | Updated MeasurementPoints count : 6057
+INFO   | jvm 1    | 2015/08/14 15:08:09 | Duration of exectuing proxyview of PointsToPoll : 2235
+INFO   | jvm 1    | 2015/08/14 15:08:09 | Duration of executing method getPointsToPoll in MilliSeconds : 2281
+INFO   | jvm 1    | 2015/08/14 15:08:10 | Duration of executing method doPolling in MilliSeconds : 3453
+INFO   | jvm 1    | 2015/08/14 15:08:10 | Duration of executing thread PollingOrSync in MilliSeconds : 3453
+INFO   | jvm 1    | 2015/08/14 15:08:36 | Duration of updating measurementpoints in MilliSeconds : 185721
+INFO   | jvm 1    | 2015/08/14 15:08:36 | Updated MeasurementPoints count : 6000
+INFO   | jvm 1    | 2015/08/14 15:11:09 | Duration of exectuing proxyview of PointsToPoll : 2109
+INFO   | jvm 1    | 2015/08/14 15:11:09 | Duration of executing method getPointsToPoll in MilliSeconds : 2156
+INFO   | jvm 1    | 2015/08/14 15:11:10 | Duration of executing method doPolling in MilliSeconds : 3219
+INFO   | jvm 1    | 2015/08/14 15:11:10 | Duration of executing thread PollingOrSync in MilliSeconds : 3219
+INFO   | jvm 1    | 2015/08/14 15:11:36 | Duration of updating measurementpoints in MilliSeconds : 179560
+INFO   | jvm 1    | 2015/08/14 15:11:36 | Updated MeasurementPoints count : 6000
+INFO   | jvm 1    | 2015/08/14 15:14:09 | Duration of exectuing proxyview of PointsToPoll : 2063
+INFO   | jvm 1    | 2015/08/14 15:14:09 | Duration of executing method getPointsToPoll in MilliSeconds : 2110
+INFO   | jvm 1    | 2015/08/14 15:14:10 | Duration of executing method doPolling in MilliSeconds : 3282
+INFO   | jvm 1    | 2015/08/14 15:14:10 | Duration of executing thread PollingOrSync in MilliSeconds : 3282
+INFO   | jvm 1    | 2015/08/14 15:14:33 | Duration of updating measurementpoints in MilliSeconds : 176835
+
+
+INFO   | jvm 1    | 2015/08/14 15:38:10 | [PnLoggingConfigurator] Parsing configuration: Hardcoded default configuration from PnLogging
+INFO   | jvm 1    | 2015/08/14 15:38:11 |  INFO [14-08-2015 15:38:10] init servlet multicalendar
+INFO   | jvm 1    | 2015/08/14 15:38:11 |  INFO [14-08-2015 15:38:10] init servlet hitcountdata
+INFO   | jvm 1    | 2015/08/14 15:38:11 |  INFO [14-08-2015 15:38:10] init servlet fielddefinitions
+INFO   | jvm 1    | 2015/08/14 15:38:11 |  INFO [14-08-2015 15:38:10] init servlet exchangelink
+INFO   | jvm 1    | 2015/08/14 15:38:11 |  INFO [14-08-2015 15:38:10] init servlet journalentrydata
+INFO   | jvm 1    | 2015/08/14 15:38:13 | CATA 08/14/15 15:38:13 INFO [org.apache.coyote.AbstractProtocol start] Starting ProtocolHandler ["http-bio-18170"] 
+INFO   | jvm 1    | 2015/08/14 15:38:13 | CATA 08/14/15 15:38:13 INFO [org.apache.coyote.AbstractProtocol start] Starting ProtocolHandler ["ajp-bio-18119"] 
+INFO   | jvm 1    | 2015/08/14 15:38:13 | CATA 08/14/15 15:38:13 INFO [org.apache.catalina.startup.Catalina start] Server startup in 63499 ms 
+INFO   | jvm 1    | 2015/08/14 15:38:21 |  INFO [14-08-2015 15:38:21] Initialization of polling and synchronizer successful.
+INFO   | jvm 1    | 2015/08/14 15:38:21 | Duration of executing thread PollingOrSync in MilliSeconds : 47
+INFO   | jvm 1    | 2015/08/14 15:42:24 | Duration of exectuing proxyview of PointsToPoll : 2562
+INFO   | jvm 1    | 2015/08/14 15:42:24 | Duration of executing method getPointsToPoll in MilliSeconds : 2656
+INFO   | jvm 1    | 2015/08/14 15:42:26 | Duration of executing method doPolling in MilliSeconds : 5109
+INFO   | jvm 1    | 2015/08/14 15:42:26 | Duration of executing thread PollingOrSync in MilliSeconds : 5125
+INFO   | jvm 1    | 2015/08/14 15:42:26 | Updated MeasurementPoints count : 6000
+INFO   | jvm 1    | 2015/08/14 15:45:29 | Duration of updating measurementpoints in MilliSeconds : 182368
+INFO   | jvm 1    | 2015/08/14 15:46:23 | Duration of exectuing proxyview of PointsToPoll : 2313
+INFO   | jvm 1    | 2015/08/14 15:46:23 | Duration of executing method getPointsToPoll in MilliSeconds : 2360
+INFO   | jvm 1    | 2015/08/14 15:46:25 | Duration of executing method doPolling in MilliSeconds : 3797
+INFO   | jvm 1    | 2015/08/14 15:46:25 | Duration of executing thread PollingOrSync in MilliSeconds : 3797
+INFO   | jvm 1    | 2015/08/14 15:46:25 | Updated MeasurementPoints count : 6000
