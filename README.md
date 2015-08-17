@@ -6,12 +6,12 @@ Java installed
 
 ## Usage
 ```
-./gradlew
+./gradlew -q -Plogfile=example.log
 ```
 
 On windows:
 ```
-gradlew.bat
+gradlew.bat -q -Plogfile=example.log
 ```
 
 # Tuning
