@@ -8,8 +8,6 @@ repositories {
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.3'
-//    compile 'com.xeiam.xchart:xchart-parent:2.5.0'
-//    compile 'com.xeiam.xchart:xchart:2.5.0'
     compile files('lib/xchart-2.5.0.jar')
 }
 

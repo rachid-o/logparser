@@ -14,21 +14,25 @@ import java.text.DecimalFormat;
 def filename = args.length > 0 ? args[0]: "example.log"
 
 
-println "Parsing: $filename"
 
 File logFile = new File(filename)
 if(!logFile.exists()) {
     println "${filename} does not exist"
     return;
 }
+def path = "../" + new Date().format("yyyyMMdd-HH.mm.ss")
 
-//def methodDurations = [:]
+println "Parsing: $filename"
+println "Output: $path"
+
 def methods = [:]
 def KEY_FINISHED = "Duration of"
 def KEY_CYCLE = "Scale."
 def NEWLINE = System.getProperty("line.separator")
 def csvFilename = filename + ".csv"
-def cvsFile = new File(csvFilename)
+def outputFolder = new File(path)
+outputFolder.mkdirs()
+def cvsFile = new File("$path/$csvFilename")
 cvsFile.delete()    // Remove this line to add to the existing file
 
 currentCyclename = "unknown cycle"
@@ -39,7 +43,6 @@ logFile.eachLine{line ->
         resPerUnit = tokens[5]
         cycleName = "${resUnits}-${resPerUnit}"
         currentCyclename = cycleName
-        //println cycleName
     } else if(line.contains(KEY_FINISHED)) {
         finishedLine = line.substring(line.lastIndexOf(KEY_FINISHED) + KEY_FINISHED.length()).trim()
         tokens = finishedLine.split('\\s')
@@ -63,9 +66,7 @@ logFile.eachLine{line ->
 println "Averages (in seconds):"
 cvsFile.append("\"method\";\"cycle\";\"average\"" + NEWLINE)
 def averageFormat = new DecimalFormat("#.##")
-//methodDurations.each{ method, durations ->
  methods.each{ method, cycles ->
-//methodDurations.each{ method, durations ->
     cycles.each{cycleName, durations ->
         seriesName = "$cycleName $method"
         avg = averageFormat.format(durations.sum() / durations.size())
@@ -93,18 +94,16 @@ methods.each{ method, cycles ->
         seriesName = "$method $cycleName"
         avg = durations.sum() / durations.size()
         cycleAvg[cycleName] = avg
-        //yData = (1..durations.size())    // List of index numbers of each element in durations
-        //println "Add series: ${seriesName}"
-        //chartCombined.addSeries(seriesName, yData, durations);
         methodAvgs[method] << avg
     }
     chartName = (filename + "-" + method).replaceAll("\\W+", "_") // remove illegal characters in filename
     Chart singleChart = chartBuilder.title(chartName).build();
+    //singleChart.getStyleManager().setYAxisMax(1.0);
+
     yData = (1..cycleAvg.size())
-    //yData = (cycles.keySet() as String[] )
     singleChart.addSeries(method, yData, cycleAvg.values());
     
-    saveChart(singleChart, chartName);
+    saveChart(singleChart, path+"/"+chartName);
 }
 
 Chart chartCombined = chartBuilder.title(filename).build();
@@ -112,11 +111,11 @@ methodAvgs.each{ method, averages ->
     yData = (1..averages.size())
     chartCombined.addSeries(method, yData, averages);
 }
-saveChart(chartCombined, filename);
+saveChart(chartCombined, path+"/"+filename);
 
 
-def saveChart(chart, name) {
+def saveChart(chart, filename) {
     //new SwingWrapper(chart).displayChart();   // Show the chart
-    BitmapEncoder.saveBitmap(chart, name, BitmapEncoder.BitmapFormat.PNG);
-    println "Created graph: ${name}.png"
+    BitmapEncoder.saveBitmap(chart, filename, BitmapEncoder.BitmapFormat.PNG);
+    println "Created graph: ${filename}.png"
 }
