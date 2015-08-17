@@ -7,15 +7,22 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+//    compile gradleApi()
+    compile localGroovy()
     compile files('lib/xchart-2.5.0.jar')
 }
 
 // task to execute the Groovy script
-task parselogs (dependsOn: 'classes', type: JavaExec) {
-    main = 'parselogs'
+task collectData (dependsOn: 'classes', type: JavaExec) {
+    main = 'CollectData'
     classpath = sourceSets.main.runtimeClasspath
+    if (project.hasProperty('logfile')) {
+        // Pass command-line argument to script.
+        args project.getProperty('logfile')
+    }
 }
+
+defaultTasks 'collectData'
 
 task createWrapper(type: Wrapper) {
   gradleVersion = '2.6'

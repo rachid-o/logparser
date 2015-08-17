@@ -6,12 +6,12 @@ Java installed
 
 ## Usage
 ```
-./gradlew parselog
+./gradlew
 ```
 
 On windows:
 ```
-gradlew parselog
+gradlew.bat
 ```
 
 # Tuning

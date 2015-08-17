@@ -1,3 +1,4 @@
+
 import com.xeiam.xchart.BitmapEncoder
 import com.xeiam.xchart.Chart
 import com.xeiam.xchart.ChartBuilder
@@ -5,13 +6,14 @@ import com.xeiam.xchart.StyleManager
 import com.xeiam.xchart.SwingWrapper
 import java.text.DecimalFormat;
 
+
 /**
  * Script to retrieve durations from logfiles and outputs it to CSV
  * Also generates charts in png. 
  */
 
 
-def filename = args.length > 0 ? args[0]: "example.log"
+def filename = args.length > 0 ? args[0]: "../example.log"
 
 
 
@@ -20,16 +22,17 @@ if(!logFile.exists()) {
     println "${filename} does not exist"
     return;
 }
-def path = "../" + new Date().format("yyyyMMdd-HH.mm.ss")
+def path = "../${logFile.name}_" + new Date().format("yyyyMMdd-HH.mm.ss")
 
 println "Parsing: $filename"
 println "Output: $path"
+
 
 def methods = [:]
 def KEY_FINISHED = "Duration of"
 def KEY_CYCLE = "Scale."
 def NEWLINE = System.getProperty("line.separator")
-def csvFilename = filename + ".csv"
+def csvFilename = logFile.name + ".csv"
 def outputFolder = new File(path)
 outputFolder.mkdirs()
 def cvsFile = new File("$path/$csvFilename")
@@ -59,7 +62,6 @@ logFile.eachLine{line ->
         methods[methodName][currentCyclename].add(duration.toInteger()/1000);  // Convert millis to seconds
     }
 }
-
 
 
 // Create CSV file with averages
@@ -96,7 +98,7 @@ methods.each{ method, cycles ->
         cycleAvg[cycleName] = avg
         methodAvgs[method] << avg
     }
-    chartName = (filename + "-" + method).replaceAll("\\W+", "_") // remove illegal characters in filename
+    chartName = (logFile.name + "-" + method).replaceAll("\\W+", "_") // remove illegal characters in filename
     Chart singleChart = chartBuilder.title(chartName).build();
     //singleChart.getStyleManager().setYAxisMax(1.0);
 
@@ -106,12 +108,12 @@ methods.each{ method, cycles ->
     saveChart(singleChart, path+"/"+chartName);
 }
 
-Chart chartCombined = chartBuilder.title(filename).build();
+Chart chartCombined = chartBuilder.title(logFile.name).build();
 methodAvgs.each{ method, averages -> 
     yData = (1..averages.size())
     chartCombined.addSeries(method, yData, averages);
 }
-saveChart(chartCombined, path+"/"+filename);
+saveChart(chartCombined, path+"/"+logFile.name);
 
 
 def saveChart(chart, filename) {
